@@ -3,6 +3,16 @@
 // var jq = jQuery.noConflict();
 $(document).ready(function(){
 
+	function setMainSectionHeight(){
+		var wh = $(window).innerHeight(),
+			nh = $('.navbar-fixed-top').outerHeight(),
+			bh = wh - nh-12;
+
+		$('.main-section-container').css({height: bh +'px', top: nh+'px'});
+	}
+
+	setMainSectionHeight();
+
 	/* For opening link on new window for mobile devices and new tab in browsers */
 	$(document).on('click', 'a[target="_system"],a[target="_blank"]', function (e) {
                                  
@@ -170,6 +180,10 @@ $(document).ready(function(){
     $(document).on('show.bs.modal', '.modal', centerModal);
     $(window).on("resize", function () {
         $('.modal:visible').each(centerModal);
+
+        //reset height on main-section-container
+		setMainSectionHeight();
+
     });
     
 });
