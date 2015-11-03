@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'OpenSans Regular';
+	/*src: url('OpenSans-Regular.ttf') format('truetype');*/
+	src: url('opensans-regular-webfont.eot');
+    src: url('opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-regular-webfont.woff2') format('woff2'),
+         url('opensans-regular-webfont.woff') format('woff'),
+         url('opensans-regular-webfont.ttf') format('truetype');
+}
