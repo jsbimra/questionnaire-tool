@@ -5,22 +5,22 @@
 <div class="landing-template">
     <div class="row">
         <div class="landing-form-slide slides center-block">
-        	<div class="sector-comp-img"><img class="img-responsive" src="images/landing-page-img.png" alt="landing image" />            
+        	<div class="sector-comp-img hide"><img class="img-responsive" src="images/landing-page-img.png" alt="landing image" />            
             </div>
-            <p class="text-center">Welkom bij <b>De andere kijk op jouw zaak!</b></p>
+            <p class="text-center">Welcome to <b>Questionnarie tool!</b></p>
             <br>
             <form class="form">
                 <div class="form-group">
-                    <label for="ddlSectorType">Selecteer de sector waarin jouw bedrijf werkzaam is</label>
+                    <label for="ddlSectorType">Select the sector in which your company works</label>
                     <select id="ddlSectorType" name="ddlSectorType" ng-model="parentCtrl.sectorType" class="form-control jsLandingDD">
-	                    <option value="">Selecteren</option>
+	                    <option value="">Selections</option>
 	                    <option ng-repeat="opt in landingCtrl.sectorList | orderBy:opt" value="{{opt}}" ng-selected="landingCtrl.lsSector == opt ? true: false ">{{opt}}</option>
 	                </select>
                 </div>
                 <div class="form-group">
-                    <label for="ddlCompanySize">Selecteer de grootte van jouw bedrijf</label>
+                    <label for="ddlCompanySize">Select the size of your business</label>
                     <select id="ddlCompanySize" name="ddlCompanySize" ng-model="parentCtrl.companySize" class="form-control jsLandingDD">
-	                    <option value="">Selecteren</option>
+	                    <option value="">Selections</option>
 	                    <option ng-repeat="opt in landingCtrl.companyList" value="{{opt}}" ng-selected="landingCtrl.lsCompany == opt ? true: false ">{{opt}}</option>
 	                </select>
                 </div>
