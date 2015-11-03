@@ -90,7 +90,7 @@
 			      	<h1 class="logo-heading">
 			      		<a class="navbar-brand" href="javascript:void(0)"
 			            ng-click="parentCtrl.saveForm(parentCtrl.categoryObject.cat_type, 'questionarieForm', parentCtrl.categoryObject.cat_score, 'landing')">
-				      		Questionnarie tool
+				      		Q tool
 				 		</a>
 				 	</h1>
 			    </div>
@@ -98,32 +98,32 @@
 			    <div id="navbar" class="navbar-collapse collapse hide" ng-class="{hide:navCtrl.hideNavBar}">
 			      <ul class="nav navbar-nav navbar-right navbar-bottom">
 			        <li ng-class="navCtrl.setActiveClass('/toelichting')">
-			            <a href="javascript:void(0)" ng-click="parentCtrl.saveForm(parentCtrl.categoryObject.cat_type, 'questionarieForm', parentCtrl.categoryObject.cat_score, 'toelichting')">TOELICHTING</a>
+			            <a href="javascript:void(0)" ng-click="parentCtrl.saveForm(parentCtrl.categoryObject.cat_type, 'questionarieForm', parentCtrl.categoryObject.cat_score, 'toelichting')">Instructions</a>
 			       	</li>
 			        <li ng-class="navCtrl.setActiveClass('/wet-en-regelgeving')">
 			            <a href="javascript:void(0)" class="text-left" ng-click="parentCtrl.saveForm(parentCtrl.categoryObject.cat_type, 'questionarieForm', parentCtrl.categoryObject.cat_score, 'wet-en-regelgeving')">
 
-			            	<span class="pull-right tickIconHolder" ng-class="{hide: parentCtrl.toggleLawCheckIcon==false}" ><img src="img/tickIcon.png" alt="" /></span>WET- EN REGELGEVING</a>
+			            	<span class="pull-right tickIconHolder" ng-class="{hide: parentCtrl.toggleLawCheckIcon==false}" ><img src="img/tickIcon.png" alt="" /></span>Law &amp; Regulation</a>
 			        </li>
 			        <li ng-class="navCtrl.setActiveClass('/organisatie')">
 			            <a href="javascript:void(0)" ng-click="parentCtrl.saveForm(parentCtrl.categoryObject.cat_type, 'questionarieForm', parentCtrl.categoryObject.cat_score, 'organisatie')">
 
-			            	<span class="pull-right tickIconHolder" ng-class="{hide: parentCtrl.toggleOrgCheckIcon==false}"><img src="img/tickIcon.png" alt="" /></span>ORGANISATIE</a>
+			            	<span class="pull-right tickIconHolder" ng-class="{hide: parentCtrl.toggleOrgCheckIcon==false}"><img src="img/tickIcon.png" alt="" /></span>Organise</a>
 			        </li>
 			        <li ng-class="navCtrl.setActiveClass('/cultuur')">
 			            <a href="javascript:void(0)" 
 			            	ng-click="parentCtrl.saveForm(parentCtrl.categoryObject.cat_type, 'questionarieForm', parentCtrl.categoryObject.cat_score, 'cultuur')">
-			            	<span class="pull-right tickIconHolder" ng-class="{hide: parentCtrl.toggleCultCheckIcon==false}"><img src="img/tickIcon.png" alt="" /></span> CULTUUR</a>
+			            	<span class="pull-right tickIconHolder" ng-class="{hide: parentCtrl.toggleCultCheckIcon==false}"><img src="img/tickIcon.png" alt="" /></span> Culture</a>
 			        </li>
 			        <li ng-class="navCtrl.setActiveClass('/techniek')">
 			            <a href="javascript:void(0)"
 			            	ng-click="parentCtrl.saveForm(parentCtrl.categoryObject.cat_type, 'questionarieForm', parentCtrl.categoryObject.cat_score, 'techniek')">
-			            	<span class="pull-right tickIconHolder" ng-class="{hide: parentCtrl.toggleTechCheckIcon==false}"><img src="img/tickIcon.png" alt="" /></span>TECHNIEK</a>
+			            	<span class="pull-right tickIconHolder" ng-class="{hide: parentCtrl.toggleTechCheckIcon==false}"><img src="img/tickIcon.png" alt="" /></span>Technique</a>
 			        </li>
 			        <li ng-class="navCtrl.setActiveClass('/resultaten')">
 			            <a href="javascript:void(0)" 
 			            	ng-click="parentCtrl.saveForm(parentCtrl.categoryObject.cat_type, 'questionarieForm', parentCtrl.categoryObject.cat_score, 'resultaten')">
-			            	RESULTATEN</a>
+			            	Result</a>
 			        </li>
 			        <li ng-show="parentCtrl.clearLSFlag"><a href="javascript:void(0);" id="clearLStorage" ng-click="parentCtrl.clearStorage();">Reset App</a></li>
 			      </ul>
@@ -132,11 +132,12 @@
 			</nav>
 			
 			
-
-			<div class="container" ng-controller="mainController as main">
-				
-			  <ng-view></ng-view>   
-			</div> <!-- /container -->
+			<div class="main-section-container">
+				<div class="container" ng-controller="mainController as main">
+				  <ng-view></ng-view>   
+				</div> <!-- /container -->
+			</div>
+			<footer></footer>
 		</div>
 
 			  
