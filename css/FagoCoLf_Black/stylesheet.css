@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'FagoCoLf-Black';
+	/*src: url('FagoCoLf-Black.ttf') format('truetype');*/
+	
+	src: url('fagocolf-black-webfont.eot');
+    src: url('fagocolf-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fagocolf-black-webfont.woff2') format('woff2'),
+         url('fagocolf-black-webfont.woff') format('woff'),
+         url('fagocolf-black-webfont.ttf') format('truetype');
+}
